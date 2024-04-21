@@ -1,0 +1,24 @@
+/root/miniconda3/envs/multignn/lib/python3.9/site-packages/torch_geometric/sampler/neighbor_sampler.py:61: UserWarning: Using 'NeighborSampler' without a 'pyg-lib' installation is deprecated and will be removed soon. Please install 'pyg-lib' for accelerated neighborhood sampling
+  warnings.warn(f"Using '{self.__class__.__name__}' without a "
+2024-04-21 10:22:03,819 [INFO ] => loading model checkpoint
+2024-04-21 10:22:04,036 [INFO ] => loaded checkpoint (epoch 0)
+2024-04-21 10:22:04,037 [INFO ] Train
+2024-04-21 10:24:08,276 [INFO ] Valid
+2024-04-21 10:24:43,790 [INFO ] Test
+Traceback (most recent call last):
+  File "/workspace/Multi-GNN/main.py", line 44, in <module>
+    main()
+  File "/workspace/Multi-GNN/main.py", line 39, in main
+    infer_gnn(tr_data, val_data, te_data, tr_inds, val_inds, te_inds, args, data_config)
+  File "/workspace/Multi-GNN/inference.py", line 96, in infer_gnn
+    pred = np.hstack(x)
+NameError: name 'np' is not defined
+Traceback (most recent call last):
+  File "/workspace/Multi-GNN/main.py", line 44, in <module>
+    main()
+  File "/workspace/Multi-GNN/main.py", line 39, in main
+    infer_gnn(tr_data, val_data, te_data, tr_inds, val_inds, te_inds, args, data_config)
+  File "/workspace/Multi-GNN/inference.py", line 96, in infer_gnn
+    pred = np.hstack(x)
+NameError: name 'np' is not defined
+2024-04-21 10:25:22,370 [INFO ] Runned inference in 198.33s

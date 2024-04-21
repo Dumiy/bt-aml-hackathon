@@ -1,0 +1,175 @@
+{
+    "os": "Linux-5.4.0-174-generic-x86_64-with-glibc2.35",
+    "python": "3.9.19",
+    "heartbeatAt": "2024-04-20T16:41:02.100839",
+    "startedAt": "2024-04-20T16:41:01.047398",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--data",
+        "dataset",
+        "--model",
+        "pna",
+        "--save_model",
+        "--unique_name"
+    ],
+    "state": "running",
+    "program": "/workspace/Multi-GNN/main.py",
+    "codePathLocal": "main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/IBM/Multi-GNN.git",
+        "commit": "252b0252afca109d1d216c411c59ff70753b25fc"
+    },
+    "email": null,
+    "root": "/workspace/Multi-GNN",
+    "host": "b54059335d97",
+    "username": "root",
+    "executable": "/root/miniconda3/envs/multignn/bin/python",
+    "cpu_count": 12,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 2080.923666666666,
+        "min": 1600.0,
+        "max": 2801.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2800.13,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2800.438,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2801.359,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2801.173,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2801.881,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2801.221,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2303.784,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2012.787,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2151.463,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2005.428,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2055.147,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2076.505,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2800.111,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2800.585,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2800.322,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2799.762,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2801.619,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2800.776,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2020.338,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2224.929,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2443.133,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2235.93,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2195.076,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2268.901,
+            "min": 1600.0,
+            "max": 2801.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 20.0,
+            "used": 16.341094970703125
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4070 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4070 Ti",
+            "memory_total": 12878610432
+        }
+    ],
+    "memory": {
+        "total": 94.3826789855957
+    }
+}

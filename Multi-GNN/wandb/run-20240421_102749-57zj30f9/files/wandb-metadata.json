@@ -1,0 +1,174 @@
+{
+    "os": "Linux-5.4.0-174-generic-x86_64-with-glibc2.35",
+    "python": "3.9.19",
+    "heartbeatAt": "2024-04-21T10:27:50.611198",
+    "startedAt": "2024-04-21T10:27:49.915258",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--data",
+        "li-small",
+        "--model",
+        "pna",
+        "--inference"
+    ],
+    "state": "running",
+    "program": "/workspace/Multi-GNN/main.py",
+    "codePathLocal": "main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/IBM/Multi-GNN.git",
+        "commit": "252b0252afca109d1d216c411c59ff70753b25fc"
+    },
+    "email": null,
+    "root": "/workspace/Multi-GNN",
+    "host": "b54059335d97",
+    "username": "root",
+    "executable": "/root/miniconda3/envs/multignn/bin/python",
+    "cpu_count": 12,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 2133.1420000000003,
+        "min": 1600.0,
+        "max": 2801.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2745.011,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2799.46,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2781.705,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2752.26,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 1723.246,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2800.177,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 1599.949,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 1600.256,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 1600.029,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 1600.014,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 1600.82,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 1600.076,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2788.017,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2767.403,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2736.732,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2520.253,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2788.968,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 2791.19,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 1600.059,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 1600.067,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 1600.025,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 1600.117,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 1599.474,
+            "min": 1600.0,
+            "max": 2801.0
+        },
+        {
+            "current": 1600.1,
+            "min": 1600.0,
+            "max": 2801.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 20.0,
+            "used": 16.34383773803711
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4070 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4070 Ti",
+            "memory_total": 12878610432
+        }
+    ],
+    "memory": {
+        "total": 94.3826789855957
+    }
+}

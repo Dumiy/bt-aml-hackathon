@@ -1,0 +1,108 @@
+/root/miniconda3/envs/multignn/lib/python3.9/site-packages/torch_geometric/sampler/neighbor_sampler.py:61: UserWarning: Using 'NeighborSampler' without a 'pyg-lib' installation is deprecated and will be removed soon. Please install 'pyg-lib' for accelerated neighborhood sampling
+  warnings.warn(f"Using '{self.__class__.__name__}' without a "
+2024-04-20 16:41:09,782 [INFO ] +---------------------------------+----------------------------------------+----------------+----------+
+| Layer                           | Input Shape                            | Output Shape   | #Param   |
+|---------------------------------+----------------------------------------+----------------+----------|
+| PNA                             | [69094, 1], [2, 608712], [608712, 4]   | [608712, 2]    | 28,917   |
+| ├─(node_emb)Linear              | [69094, 1]                             | [69094, 20]    | 40       |
+| ├─(edge_emb)Linear              | [608712, 4]                            | [608712, 20]   | 100      |
+| ├─(convs)ModuleList             | --                                     | --             | 24,320   |
+| │    └─(0)PNAConv               | [69094, 20], [2, 608712], [608712, 20] | [69094, 20]    | 12,160   |
+| │    └─(1)PNAConv               | [69094, 20], [2, 608712], [608712, 20] | [69094, 20]    | 12,160   |
+| ├─(emlps)ModuleList             | --                                     | --             | --       |
+| ├─(batch_norms)ModuleList       | --                                     | --             | 80       |
+| │    └─(0)BatchNorm             | [69094, 20]                            | [69094, 20]    | 40       |
+| │    │    └─(module)BatchNorm1d | [69094, 20]                            | [69094, 20]    | 40       |
+| │    └─(1)BatchNorm             | [69094, 20]                            | [69094, 20]    | 40       |
+| │    │    └─(module)BatchNorm1d | [69094, 20]                            | [69094, 20]    | 40       |
+| ├─(mlp)Sequential               | [608712, 60]                           | [608712, 2]    | 4,377    |
+| │    └─(0)Linear                | [608712, 60]                           | [608712, 50]   | 3,050    |
+| │    └─(1)ReLU                  | [608712, 50]                           | [608712, 50]   | --       |
+| │    └─(2)Dropout               | [608712, 50]                           | [608712, 50]   | --       |
+| │    └─(3)Linear                | [608712, 50]                           | [608712, 25]   | 1,275    |
+| │    └─(4)ReLU                  | [608712, 25]                           | [608712, 25]   | --       |
+| │    └─(5)Dropout               | [608712, 25]                           | [608712, 25]   | --       |
+| │    └─(6)Linear                | [608712, 25]                           | [608712, 2]    | 52       |
++---------------------------------+----------------------------------------+----------------+----------+
+2024-04-20 17:06:08,679 [INFO ] Train F1: 0.0151
+2024-04-20 17:24:54,230 [INFO ] Validation F1: 0.3046
+2024-04-20 17:24:54,231 [INFO ] Test F1: 0.3374
+2024-04-20 17:48:41,217 [INFO ] Train F1: 0.2878
+2024-04-20 18:08:13,235 [INFO ] Validation F1: 0.4210
+2024-04-20 18:08:13,235 [INFO ] Test F1: 0.4279
+2024-04-20 18:32:34,792 [INFO ] Train F1: 0.3649
+2024-04-20 18:50:56,537 [INFO ] Validation F1: 0.4740
+2024-04-20 18:50:56,537 [INFO ] Test F1: 0.4713
+2024-04-20 19:15:02,812 [INFO ] Train F1: 0.4042
+2024-04-20 19:35:00,601 [INFO ] Validation F1: 0.4803
+2024-04-20 19:35:00,602 [INFO ] Test F1: 0.4769
+2024-04-20 19:59:17,021 [INFO ] Train F1: 0.4225
+2024-04-20 20:17:19,444 [INFO ] Validation F1: 0.4953
+2024-04-20 20:17:19,444 [INFO ] Test F1: 0.4963
+2024-04-20 20:41:50,517 [INFO ] Train F1: 0.4395
+2024-04-20 20:59:47,031 [INFO ] Validation F1: 0.5352
+2024-04-20 20:59:47,032 [INFO ] Test F1: 0.5237
+2024-04-20 21:23:57,604 [INFO ] Train F1: 0.4473
+2024-04-20 21:41:55,537 [INFO ] Validation F1: 0.5482
+2024-04-20 21:41:55,538 [INFO ] Test F1: 0.5334
+2024-04-20 22:06:22,810 [INFO ] Train F1: 0.4591
+2024-04-20 22:24:14,004 [INFO ] Validation F1: 0.5480
+2024-04-20 22:24:14,005 [INFO ] Test F1: 0.5468
+2024-04-20 22:48:49,739 [INFO ] Train F1: 0.4697
+2024-04-20 23:07:27,082 [INFO ] Validation F1: 0.5480
+2024-04-20 23:07:27,082 [INFO ] Test F1: 0.5190
+2024-04-20 23:31:46,739 [INFO ] Train F1: 0.4767
+2024-04-20 23:49:03,346 [INFO ] Validation F1: 0.5374
+2024-04-20 23:49:03,346 [INFO ] Test F1: 0.5224
+2024-04-21 00:13:24,491 [INFO ] Train F1: 0.4868
+2024-04-21 00:31:17,547 [INFO ] Validation F1: 0.5667
+2024-04-21 00:31:17,548 [INFO ] Test F1: 0.5777
+2024-04-21 00:55:32,215 [INFO ] Train F1: 0.4861
+2024-04-21 01:14:33,667 [INFO ] Validation F1: 0.5708
+2024-04-21 01:14:33,667 [INFO ] Test F1: 0.5740
+2024-04-21 01:38:44,675 [INFO ] Train F1: 0.4900
+2024-04-21 01:56:34,233 [INFO ] Validation F1: 0.5735
+2024-04-21 01:56:34,233 [INFO ] Test F1: 0.5719
+2024-04-21 02:21:00,708 [INFO ] Train F1: 0.4972
+2024-04-21 02:37:44,699 [INFO ] Validation F1: 0.5660
+2024-04-21 02:37:44,699 [INFO ] Test F1: 0.5920
+2024-04-21 03:02:03,299 [INFO ] Train F1: 0.5052
+2024-04-21 03:19:22,168 [INFO ] Validation F1: 0.5653
+2024-04-21 03:19:22,168 [INFO ] Test F1: 0.5838
+2024-04-21 03:43:45,904 [INFO ] Train F1: 0.5061
+2024-04-21 04:02:18,069 [INFO ] Validation F1: 0.5838
+2024-04-21 04:02:18,070 [INFO ] Test F1: 0.5919
+2024-04-21 04:26:31,805 [INFO ] Train F1: 0.5072
+2024-04-21 04:44:34,125 [INFO ] Validation F1: 0.5730
+2024-04-21 04:44:34,126 [INFO ] Test F1: 0.6054
+2024-04-21 05:09:05,902 [INFO ] Train F1: 0.5070
+2024-04-21 05:27:08,152 [INFO ] Validation F1: 0.5851
+2024-04-21 05:27:08,152 [INFO ] Test F1: 0.5990
+2024-04-21 05:51:18,445 [INFO ] Train F1: 0.5133
+2024-04-21 06:08:49,189 [INFO ] Validation F1: 0.5940
+2024-04-21 06:08:49,190 [INFO ] Test F1: 0.5958
+2024-04-21 06:33:03,963 [INFO ] Train F1: 0.5135
+2024-04-21 06:50:58,235 [INFO ] Validation F1: 0.5730
+2024-04-21 06:50:58,236 [INFO ] Test F1: 0.6012
+2024-04-21 07:15:18,172 [INFO ] Train F1: 0.5196
+2024-04-21 07:33:51,163 [INFO ] Validation F1: 0.5883
+2024-04-21 07:33:51,164 [INFO ] Test F1: 0.6034
+2024-04-21 07:57:59,031 [INFO ] Train F1: 0.5180
+2024-04-21 08:16:13,552 [INFO ] Validation F1: 0.6004
+2024-04-21 08:16:13,553 [INFO ] Test F1: 0.6165
+2024-04-21 08:41:03,618 [INFO ] Train F1: 0.5211
+2024-04-21 08:59:08,181 [INFO ] Validation F1: 0.5946
+2024-04-21 08:59:08,182 [INFO ] Test F1: 0.6114
+2024-04-21 09:23:14,348 [INFO ] Train F1: 0.5261
+2024-04-21 09:41:44,862 [INFO ] Validation F1: 0.5902
+2024-04-21 09:41:44,863 [INFO ] Test F1: 0.6027
+Traceback (most recent call last):
+  File "/workspace/Multi-GNN/main.py", line 41, in <module>
+    logging.info(f"Runned inference in {t2-t1:.2f}s")
+  File "/workspace/Multi-GNN/main.py", line 34, in main
+    train_gnn(tr_data, val_data, te_data, tr_inds, val_inds, te_inds, args, data_config)
+  File "/workspace/Multi-GNN/training.py", line 233, in train_gnn
+    model = train_homo(tr_loader, val_loader, te_loader, tr_inds, val_inds, te_inds, model, optimizer, loss_fn, args, config, device, val_data, te_data, data_config)
+  File "/workspace/Multi-GNN/training.py", line 41, in train_homo
+    total_loss += float(loss) * pred.numel()
+KeyboardInterrupt

@@ -1,0 +1,7 @@
+{
+    "paths": {
+      "aml_data": "", 
+      "model_to_load": "21pna.pth",
+      "model_to_save": ""
+    }
+  }

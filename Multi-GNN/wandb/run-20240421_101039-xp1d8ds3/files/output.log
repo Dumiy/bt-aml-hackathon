@@ -1,0 +1,10 @@
+/root/miniconda3/envs/multignn/lib/python3.9/site-packages/torch_geometric/sampler/neighbor_sampler.py:61: UserWarning: Using 'NeighborSampler' without a 'pyg-lib' installation is deprecated and will be removed soon. Please install 'pyg-lib' for accelerated neighborhood sampling
+  warnings.warn(f"Using '{self.__class__.__name__}' without a "
+Traceback (most recent call last):
+  File "/workspace/Multi-GNN/main.py", line 44, in <module>
+    main()
+  File "/workspace/Multi-GNN/main.py", line 39, in main
+    infer_gnn(tr_data, val_data, te_data, tr_inds, val_inds, te_inds, args, data_config)
+  File "/workspace/Multi-GNN/inference.py", line 61, in infer_gnn
+    if not (args.avg_tps or args.finetune):
+AttributeError: 'Namespace' object has no attribute 'avg_tps'

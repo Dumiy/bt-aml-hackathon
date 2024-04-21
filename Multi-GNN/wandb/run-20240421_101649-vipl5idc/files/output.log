@@ -1,0 +1,35 @@
+/root/miniconda3/envs/multignn/lib/python3.9/site-packages/torch_geometric/sampler/neighbor_sampler.py:61: UserWarning: Using 'NeighborSampler' without a 'pyg-lib' installation is deprecated and will be removed soon. Please install 'pyg-lib' for accelerated neighborhood sampling
+  warnings.warn(f"Using '{self.__class__.__name__}' without a "
+2024-04-21 10:16:56,599 [INFO ] => loading model checkpoint
+2024-04-21 10:16:56,830 [INFO ] => loaded checkpoint (epoch 0)
+2024-04-21 10:16:56,830 [INFO ] Train
+Traceback (most recent call last):
+  File "/workspace/Multi-GNN/main.py", line 44, in <module>
+    main()
+  File "/workspace/Multi-GNN/main.py", line 39, in main
+    infer_gnn(tr_data, val_data, te_data, tr_inds, val_inds, te_inds, args, data_config)
+  File "/workspace/Multi-GNN/inference.py", line 78, in infer_gnn
+    f1 = evaluate_homo(tr_loader, tr_inds, model, tr_data, device, args)
+  File "/root/miniconda3/envs/multignn/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/workspace/Multi-GNN/train_util.py", line 103, in evaluate_homo
+    for batch in tqdm.tqdm(loader, disable=not args.tqdm):
+  File "/root/miniconda3/envs/multignn/lib/python3.9/site-packages/tqdm/std.py", line 1169, in __iter__
+    for obj in iterable:
+  File "/root/miniconda3/envs/multignn/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 631, in __next__
+    data = self._next_data()
+  File "/root/miniconda3/envs/multignn/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 675, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/root/miniconda3/envs/multignn/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 54, in fetch
+    return self.collate_fn(data)
+  File "/root/miniconda3/envs/multignn/lib/python3.9/site-packages/torch_geometric/loader/link_loader.py", line 215, in collate_fn
+    out = self.filter_fn(out)
+  File "/root/miniconda3/envs/multignn/lib/python3.9/site-packages/torch_geometric/loader/link_loader.py", line 232, in filter_fn
+    data = filter_data(  #
+  File "/root/miniconda3/envs/multignn/lib/python3.9/site-packages/torch_geometric/loader/utils.py", line 163, in filter_data
+    filter_edge_store_(data._store, out._store, row, col, edge, perm)
+  File "/root/miniconda3/envs/multignn/lib/python3.9/site-packages/torch_geometric/loader/utils.py", line 151, in filter_edge_store_
+    out_store[key] = index_select(
+  File "/root/miniconda3/envs/multignn/lib/python3.9/site-packages/torch_geometric/loader/utils.py", line 73, in index_select
+    return torch.index_select(value, dim, index, out=out)
+KeyboardInterrupt

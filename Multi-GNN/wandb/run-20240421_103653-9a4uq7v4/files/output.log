@@ -1,0 +1,14 @@
+/root/miniconda3/envs/multignn/lib/python3.9/site-packages/torch_geometric/sampler/neighbor_sampler.py:61: UserWarning: Using 'NeighborSampler' without a 'pyg-lib' installation is deprecated and will be removed soon. Please install 'pyg-lib' for accelerated neighborhood sampling
+  warnings.warn(f"Using '{self.__class__.__name__}' without a "
+2024-04-21 10:37:00,168 [INFO ] => loading model checkpoint
+2024-04-21 10:37:00,385 [INFO ] => loaded checkpoint (epoch 0)
+2024-04-21 10:37:00,386 [INFO ] Train
+2024-04-21 10:39:09,107 [INFO ] Valid
+2024-04-21 10:39:41,250 [INFO ] Test
+2024-04-21 10:40:12,550 [INFO ] Runned inference in 192.16s
+2024-04-21 10:40:14,917 [INFO ] F1 SCORE 0.4833976833976834
+Accuracy: 0.9989
+Precision: 0.4831
+Recall: 0.4837
+F1 Score: 0.4834
+AUC: 0.7416
